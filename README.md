@@ -6,8 +6,6 @@ A small app that lists GoDaddy GitHub repositories and shows details for each re
 
 - Repository list with search and quick stats
 - Detail page with title, description, link to GitHub, languages, forks, open issues, watchers
-- Client-side routing
-- Tests with Vitest + Testing Library
 
 ## Getting started
 
