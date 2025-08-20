@@ -46,15 +46,8 @@ export default function RepoList() {
           <li key={repo.id} style={{ border: '1px solid #333', borderRadius: 12, padding: '1rem', background: 'rgba(255,255,255,0.02)' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.5rem', alignItems: 'start' }}>
               <Link to={`/repo/${repo.name}`} style={{ fontWeight: 700, fontSize: '1.05rem' }}>{repo.name}</Link>
-              <span aria-label="stars" title="Stars"> {repo.stargazers_count}</span>
             </div>
             <p style={{ margin: '0.5rem 0 0.75rem', opacity: 0.9 }}>{repo.description || 'No description'}</p>
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', fontSize: '0.9rem', opacity: 0.9 }}>
-              {repo.language && <span> {repo.language}</span>}
-              <span>{repo.forks_count}</span>
-              <span>{repo.watchers_count}</span>
-              <span>{repo.open_issues_count} open issues</span>
-            </div>
           </li>
         ))}
       </ul>
